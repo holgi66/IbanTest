@@ -8,7 +8,7 @@ import de.telekom.sea7.Iban;
 
 public class IbanTest {
 
-	private final Iban cut;
+	private Iban cut;
 
 	@BeforeEach
 	void setup() {
