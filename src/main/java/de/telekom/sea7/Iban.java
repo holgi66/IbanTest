@@ -21,4 +21,8 @@ public class Iban {
 		this.iban = iban;
 	}
 
+	public void run(String[] args) {
+	
+	}
+
 }
