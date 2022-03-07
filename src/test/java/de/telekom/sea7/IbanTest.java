@@ -1,3 +1,4 @@
+package de.telekom.sea7;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.AfterEach;
@@ -12,7 +13,7 @@ public class IbanTest {
 
 	@BeforeEach
 	void setup() {
-		cut = new Iban();
+		cut = new Iban(null);
 	}
 
 	@Test
