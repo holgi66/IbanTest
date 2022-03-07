@@ -4,11 +4,12 @@
 	<artifactId>IbanTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<parent>
+	<!-- 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.3</version>
 	</parent>
+	-->
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,63 +19,34 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
+			<!--	<plugin>
+				 https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin 
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			-->
 
 			<!-- plugin für junit Test -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
 			</plugin>
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
 			</plugin>
 		</plugins>
 	</build>
 
 	<dependencies>
-		<dependency>
-			<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf -->
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
 
 		<!-- dependency für junit Test  -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter</artifactId>
 			<scope>test</scope>
+			<version>5.7.1</version>
 		</dependency>
 
-
-		<!-- ohne Sring Boot müsste man hier 31 dependencies eintragen!! -->
 	</dependencies>
 </project>
