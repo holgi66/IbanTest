@@ -8,7 +8,7 @@ public class Iban {
 	public int getId() {
 		return id;
 	}
-	
+
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -22,7 +22,7 @@ public class Iban {
 	}
 
 	public void run(String[] args) {
-	
+
 	}
 
 }
