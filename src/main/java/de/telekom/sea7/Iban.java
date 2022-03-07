@@ -5,6 +5,10 @@ public class Iban {
 	private int id;
 	private String iban;
 
+	public Iban(String iban) {
+		this.iban = iban;
+	}
+
 	public int getId() {
 		return id;
 	}
