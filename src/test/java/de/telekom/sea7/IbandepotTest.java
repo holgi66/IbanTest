@@ -1,10 +1,8 @@
 package de.telekom.sea7;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertSame;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -26,10 +24,8 @@ public class IbandepotTest {
 		cut.add(iban);
 
 		// Assert
-		assertSame("0", addIban_test(iban));
-
+		assertEquals("DE214567", cut.get(0));
 	}
-
 
 	@AfterEach
 	void teardown() {
