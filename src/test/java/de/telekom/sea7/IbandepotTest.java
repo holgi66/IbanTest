@@ -30,10 +30,6 @@ public class IbandepotTest {
 
 	}
 
-//	private void assertEquals(String string, Iban iban) {
-//		// TODO Auto-generated method stub
-//		
-//	}
 
 	@AfterEach
 	void teardown() {
